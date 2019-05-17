@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Friend Survey</title>
+</head>
+<body>
+    <div>
+        <h1>Survey</h1>
+        <p>Take a quick server to find your perfect friend match! With 1 = strongly agree & 5 = strongly disagree </p>
+        <form>
+            <div class='form-group'>
+                <input id='name' type='text' class='form-control' placeholder='First Name (Required)'>
+            </div>
+            <div class='form-group'>
+                <input id='email' type='text' class='form-control' placeholder='Email Address (Required)'>
+            </div>
+            <div class='form-group'>
+                <input id='photo' type='text' class='form-control' placeholder='Profile Photo Link (Required)'>
+            </div>
+            <div class='form-group'>
+                <label for='question1'>I cannot focus unless my surrounding area is cleaned.</label>
+                <select class="form-control" id='question1'>
+                    <option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+                </select>
+            </div>
+            <div class='form-group'>
+                <label for='question2'>I love shiba inus.</label>
+                <select class="form-control" id='question2'>
+                    <option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+                </select>
+            </div>
+            <div class='form-group'>
+                <label for='question3'>I love cats.</label>
+                <select class="form-control" id='question3'>
+                    <option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+                </select>
+            </div>
+            <div class='form-group'>
+                <label for='question4'>I believe unicorns to be the most magical creatures there are.</label>
+                <select class="form-control" id='question4'>
+                    <option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+                </select>
+            </div>
+            <div class='form-group'>
+                <label for='question5'>I love any form of art.</label>
+                <select class="form-control" id='question5'>
+                    <option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+                </select>
+            </div>
+            <div class='form-group'>
+                <label for='question6'>I believe myself to be the best there is for the opposite sex.</label>
+                <select class="form-control" id='question6'>
+                    <option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+                </select>
+            </div>
+            <div class='form-group'>
+                <label for='question7'>I would rather for everything to be perfect and planned out than spontaneous, and unpredictable.</label>
+                <select class="form-control" id='question7'>
+                    <option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+                </select>
+            </div>
+            <div class='form-group'>
+                <label for='question8'>I believe pineapples belong on pizza.</label>
+                <select class="form-control" id='question8'>
+                    <option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+                </select>
+            </div>
+            <div class='form-group'>
+                <label for='question9'>I believe that in-n-out is overrated.</label>
+                <select class="form-control" id='question9'>
+                    <option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+                </select>
+            </div>
+            <div class='form-group'>
+                <label for='question10'>I am not the nicest person out there.</label>
+                <select class="form-control" id='question10'>
+                    <option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+                </select>
+            </div>
+        </form>
+        <div class='text-center'>
+            <button id='submit' type='submit' class='btn btn-success btn-lg'>Submit!</button>
+        </div>
+        <!-- After submitting the survey -->
+        <div id='surveyModal' class='modal'>
+            <div class='modal-content'>
+              <span class='close'>&times;</span>
+              <p>Your best friend is...</p>
+              <div id='friendImage'></div>
+              <p id='friendName'></p>
+              <p id='matchQuality'></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
